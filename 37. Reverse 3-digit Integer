@@ -1,0 +1,10 @@
+/**
+ * @param number: A 3-digit number.
+ * @return: Reversed number.
+ */
+const reverseInteger = function (number) {
+    var digit = number % 10;
+    var digit2 = (parseInt(number / 10)) % 10;
+    var digit3 = parseInt(number / 10 / 10);
+    return (digit * 100) + digit2 * 10 + digit3;
+}
