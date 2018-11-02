@@ -1,0 +1,11 @@
+/**
+ * @param a: An integer
+ * @param b: An integer
+ * @return: The sum of a and b 
+ */
+const aplusb = function (a, b) {
+    while (b) {
+        [a, b] = [a ^ b, (a & b) << 1];
+    }
+    return a;
+}
