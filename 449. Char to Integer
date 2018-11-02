@@ -1,0 +1,8 @@
+/**
+ * @param character: a character
+ * @return: An integer
+ */
+const charToInteger = function (character) {
+    // write your code here
+    return character.charCodeAt();
+}
