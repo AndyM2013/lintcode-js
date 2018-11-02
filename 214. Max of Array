@@ -1,0 +1,22 @@
+/**
+ * @param A: An integer
+ * @return: a float number
+ */
+const maxOfArray = function (A) {
+    // write your code here
+    A.sort(function(a, b){return a - b});
+    return A[A.length - 1];
+}
+
+
+solution 2
+const maxOfArray = function (A) {
+    // write your code here
+    var max = "";
+   for (var i = 0; i < A.length; i++){
+       if (A[i] > max){
+           max = A[i];
+       }
+   }
+   return parseFloat(max);
+}
