@@ -1,0 +1,19 @@
+/**
+ * @param nums: An integer array
+ * @return: The second max number in the array.
+ */
+const secondMax = function (nums) {
+    // write your code here
+    var max = Math.max(nums[0], nums[1]);
+    var secondMax = Math.min(nums[0], nums[1]);
+    
+    for (var i = 2; i < nums.length; i++){
+        if (nums[i] > max){
+            secondMax = max;
+            max = nums[i];
+        } else if (nums[i] > secondMax){
+            secondMax = nums[i];
+        }
+    }
+    return secondMax;
+}
