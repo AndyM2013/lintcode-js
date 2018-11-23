@@ -1,0 +1,7 @@
+/**
+ * @param str: A string
+ * @return: A string
+ */
+const lowercaseToUppercase2 = function (str) {
+    return str.toUpperCase();
+};
