@@ -1,0 +1,8 @@
+/**
+ * @param str: A string
+ * @return: An integer
+ */
+const stringToInteger = function (str) {
+    var num = parseInt(str);
+    return num;
+};
